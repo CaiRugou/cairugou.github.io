@@ -2,91 +2,43 @@
 <html>
 <head>
   <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-  
-
-  
-  <title>梯度下降法 | Honny&#39;s Notes</title>
+  <title>梯度下降法 | lyyourc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。 梯度下降法输入：目标函数$f(x)$，梯度函数$g(x)=▽f(x)$，计算精度$ε$；输出：$f(x) $的极小点$x^* $ (1) 取出初始值 $x^{(0)} ∈ R^n $, 置$k = 0$">
-<meta property="og:type" content="article">
-<meta property="og:title" content="梯度下降法">
-<meta property="og:url" content="http://yoursite.com/2016/04/15/梯度下降法/index.html">
-<meta property="og:site_name" content="Honny&#39;s Notes">
-<meta property="og:description" content="梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。 梯度下降法输入：目标函数$f(x)$，梯度函数$g(x)=▽f(x)$，计算精度$ε$；输出：$f(x) $的极小点$x^* $ (1) 取出初始值 $x^{(0)} ∈ R^n $, 置$k = 0$">
-<meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-17T14:52:19.973Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梯度下降法">
-<meta name="twitter:description" content="梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。 梯度下降法输入：目标函数$f(x)$，梯度函数$g(x)=▽f(x)$，计算精度$ε$；输出：$f(x) $的极小点$x^* $ (1) 取出初始值 $x^{(0)} ∈ R^n $, 置$k = 0$">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/css/app.css">
+  <!-- <link rel='stylesheet' href='http://fonts.useso.com/css?family=Source+Code+Pro'> --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
-    <link rel="alternate" href="/atom.xml" title="Honny&#39;s Notes" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </head>
 
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Honny&#39;s Notes</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-梯度下降法" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/04/15/梯度下降法/" class="article-date">
-  <time datetime="2016-04-15T10:10:11.000Z" itemprop="datePublished">2016-04-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><nav class="app-nav">
   
-    <h1 class="article-title" itemprop="name">
-      梯度下降法
-    </h1>
+    
+      <a href="/.">home</a>
+    
   
+    
+      <a href="/archives">archive</a>
+    
+  
+    
+      <a href="/atom.xml">rss</a>
+    
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><em>梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。</em></p>
+  <main class="post">
+  <article>
+  <h1 class="article-title">
+    <a href="/2016/04/15/梯度下降法/">梯度下降法</a>
+  </h1>
+
+  <section class="article-meta">
+    <p class="article-date">April 15 2016</p>
+  </section>
+
+  <section class="article-entry">
+    <p><em>梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。</em></p>
 <h2 id="梯度下降法"><a href="#梯度下降法" class="headerlink" title="梯度下降法"></a>梯度下降法</h2><p>输入：目标函数$f(x)$，梯度函数$g(x)=▽f(x)$，计算精度$ε$；<br>输出：$f(x) $的极小点$x^* $</p>
 <p>(1) 取出初始值 $x^{(0)} ∈ R^n $, 置$k = 0$<br>(2) 计算$ f(x^{(k)})$<br>(3) 计算$g_k = g(x^{(k)})$, 当$||g_k||&lt; ε$时，停止迭代,令$x^* = x^{(k)}$；否则，令 $p_k=-g(x^{(k)})$（这里注意是梯度上升的反方向），求 $λ_k$，使</p>
 <p>$$f(x^{(k)}+λpk)=\min{λ≥0} f( x^{(k)}+λ p_k )$$</p>
@@ -110,89 +62,78 @@
 <p>最终得到迭代$x^{(1)} = (0.5,1)$</p>
 <p>当达到某一精度我们可以停止这一迭代过程。</p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/15/梯度下降法/" data-id="cjg7x1w5k0000nn5enfidlheq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-  
+  </section>
 </article>
 
+  <div class="sharing grid">
+  <section class="profile grid-item grid">
+    <img class="avatar" src="http://7xrcp8.com1.z0.glb.clouddn.com/avatar.png" alt="avatar" />
+    <div class="grid-item">
+      <p class="title"> lyyourc </p>
+      <p class="subtitle"> You Are The JavaScript In My HTML </p>
+    <div>
+  </section>
+
+  <section class="share-btns">
+    <!-- <p> share it if you like it~ </p> -->
+    <a
+  class="twitter-share-button"
+  data-size="large"
+  data-via="DrakeLeung"
+  href="https://twitter.com/intent/tweet?text=<em>梯度下降法(gradient d"
+>
+  Tweet
+</a>
+
+<script>
+  window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  js.async = true;
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));
+</script>
+
+  </section>
+</div>
+
+
+  
+    
+<section class="article-comment">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
 </section>
-        
-          <aside id="sidebar">
-  
-    
 
+<script>
+  var disqus_shortname = 'drakeleung';
   
-    
-
+  var disqus_url = 'http://yoursite.com/2016/04/15/梯度下降法/';
   
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li></ul>
-    </div>
-  </div>
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
 
 
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/04/15/梯度下降法/">梯度下降法</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
+</main><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 Honny Chou<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
-
-
-  </div><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 </body>
 </html>
