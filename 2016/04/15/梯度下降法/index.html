@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="Honny&#39;s Notes">
 <meta property="og:description" content="梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。 梯度下降法输入：目标函数$f(x)$，梯度函数$g(x)=▽f(x)$，计算精度$ε$；输出：$f(x) $的极小点$x^* $ (1) 取出初始值 $x^{(0)} ∈ R^n $, 置$k = 0$">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-17T14:52:19.973Z">
+<meta property="og:updated_time" content="2018-04-29T17:06:21.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="梯度下降法">
 <meta name="twitter:description" content="梯度下降法(gradient descent)或者最速下降法(steepest descent)是求解无约束最优化问题的一种最为常用的方法。梯度下降法是迭代算法，每一步需要求解目标函数的梯度向量。 梯度下降法输入：目标函数$f(x)$，梯度函数$g(x)=▽f(x)$，计算精度$ε$；输出：$f(x) $的极小点$x^* $ (1) 取出初始值 $x^{(0)} ∈ R^n $, 置$k = 0$">
@@ -360,8 +360,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-04-17T22:52:19+08:00">
-                2018-04-17
+              <time title="更新于" itemprop="dateModified" datetime="2018-04-30T01:06:21+08:00">
+                2018-04-30
               </time>
             
           </span>
@@ -446,10 +446,10 @@
 <p>当目标函数是凸函数时，梯度下降 法的解是全局最优解，更为一般的情况下，并不保证是全局最优解。其收敛速度也不一定是最快的。</p>
 <p>例题解析<br>已知初始值$x_0=(1,1)$，用最速下降法求解目标函数$f(x) = 4x_1+6x_2-2x_1^2-2x_1x_2-2x_2^2$的极大值，则迭代一次后$x_1$的值。</p>
 <p>解：<br>得到目标函数的梯度函数：<br>$$\dfrac{∂f}{∂x_1} = 4-4x_1-2x_2$$</p>
-<p>$$\dfrac{∂f}{∂x_1} = 6-4x_2-2x_1$$</p>
+<p>$$\dfrac{∂f}{∂x_2} = 6-4x_2-2x_1$$</p>
 <p>求$g_k$得到：$g_k=g(x^{(k=0)})$，故有$p_k=(2,0)$</p>
 <p>$$\dfrac{∂f}{∂x_1} = 4-4×1-2×1=2$$</p>
-<p>$$\dfrac{∂f}{∂x_1} = 6-4×1-2×1=0$$</p>
+<p>$$\dfrac{∂f}{∂x_2} = 6-4×1-2×1=0$$</p>
 <p>.2.进行下一次迭代即$x^{(k+1)}$，先要得到最优步长$λ_k$<br>这里要求的是极大值故为$p_k$，如果是极小值$-p_k$</p>
 <p>$$f(x^{(k)}+λ_k p_k) = f((1,1)+λ_0(2,0))=-2(1-λ_0)^2-4λ_0+6$$</p>
 <p>为了求最优步长故对$g_k$求偏倒：</p>
@@ -1316,9 +1316,7 @@ var jiathis_config={
   
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
-
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/"});</script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
+   <script type="text/javascript" src="/js/src/fireworks.js"></script><!-- hexo-inject:begin --><!-- Begin: Injected MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config("");
 </script>
@@ -1335,7 +1333,9 @@ var jiathis_config={
 <script type="text/javascript" src="custom_mathjax_source">
 </script>
 <!-- End: Injected MathJax -->
-<!-- hexo-inject:end --></body>
+<!-- hexo-inject:end -->
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/"});</script></body>
 </html>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/love.js"></script>
